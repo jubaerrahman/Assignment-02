@@ -12,6 +12,10 @@ body {
 * {
   outline: 1px solid red;
 } */
+
+p{
+  color: rgb(173, 169, 169);
+}
 .numbers h1{
   color: #00FF88;
   font-size:x-large;
@@ -111,7 +115,27 @@ body {
     justify-content: center;
     align-items: center;
     gap: 10px;
+    text-align: center;
+
   }
+  .links{
+    justify-content: center;
+  }
+  
+  footer{
+    background-position: center;
+    background-size: cover;
+    background-image:url(./assets/footer-bg.png);
+   
+  }
+  .texts-foot{
+    gap: 2px;
+     
+    margin: 0 auto;
+
+  }
+
+
 
 
 }
