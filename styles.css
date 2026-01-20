@@ -1,13 +1,15 @@
 body {
   font-family: "Inter", sans-serif;
+  background-color:#190a2e;
 }
 
 html,
 body {
   overflow-x: hidden;
-}
 
-/* * {
+}
+/* 
+* {
   outline: 1px solid red;
 } */
 .numbers h1{
@@ -36,6 +38,27 @@ body {
 .image-container {
   max-width: 350px;
   max-height: 350px;
+}
+
+.grid-container{
+  margin: 200px 120px;
+}
+
+.grid-container h1{
+  font-size: larger;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.grid-container p{
+  font-size: x-small;
+  font-weight: 200;
+  color: #ffffff;
+  background: rgba(35, 14, 61, 1);
+}
+.g-box{
+  background-color: rgba(53,17,101,0.4);
+  border-radius: 30px;
 }
 
 @media screen and (max-width: 576px) {
@@ -69,7 +92,18 @@ body {
     background-size: cover;
     background-position: center;
   }
-  
+  .grid-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+  }
+  .g-box{
+    width: 400px;
+
+  }
 
 
 }
