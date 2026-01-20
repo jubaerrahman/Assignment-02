@@ -7,10 +7,25 @@ body {
   overflow-x: hidden;
 }
 
-* {
+/* * {
   outline: 1px solid red;
+} */
+.numbers h1{
+  color: #00FF88;
+  font-size:x-large;
+  font-weight: 700;
+
+
 }
 
+.numbers p{
+  color: #ffffff;
+  font-weight: 200;
+}
+
+.numbers{
+  padding: 10px;
+}
 /* .btn:hover{
     cursor: pointer;
     transform: translateX(5px) translateY(-3px);
