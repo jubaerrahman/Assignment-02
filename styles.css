@@ -1,0 +1,60 @@
+body {
+  font-family: "Inter", sans-serif;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+* {
+  outline: 1px solid red;
+}
+
+/* .btn:hover{
+    cursor: pointer;
+    transform: translateX(5px) translateY(-3px);
+    transition-duration: 1ms;
+   
+} */
+
+.image-container {
+  max-width: 350px;
+  max-height: 350px;
+}
+
+@media screen and (max-width: 576px) {
+  /* hero+navbar responsiveness */
+  .navbar {
+    justify-content: space-between;
+    margin: 0px 8px;
+  }
+
+  .menu,
+  .btn-nav {
+    display: none;
+  }
+
+  #menu-btn {
+    width: 24px;
+    height: 24px;
+  }
+
+  .image-container {
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+  .mic {
+    max-width: 80px;
+    max-height: 80px;
+  }
+
+  .hero-container {
+    background-size: cover;
+    background-position: center;
+  }
+  
+
+
+}

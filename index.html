@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>TechWave</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <section class="bg-[#190a2e] max-w-full max-h-full">
+      <nav
+        class="navbar flex justify-around items-center bg-[#17082c] text-[#FFFFFF]"
+      >
+        <h1 class="heading text-3xl font-bold">
+          Tech<span
+            class="bg-gradient-to-tr from-[#F7E93f] via-[#FB09B4] to-[#9100F8] bg-clip-text text-transparent"
+            >Wave</span
+          >
+        </h1>
+        <button id="menu-btn" class="md:hidden text-2xl">
+          <img src="./assets/hamburger-menu.png" alt="" />
+        </button>
+        <ul class="menu flex space-x-10 text-base font-light">
+          <li><a href="">About</a></li>
+          <li><a href="">Episodes</a></li>
+          <li><a href="">Host</a></li>
+        </ul>
+        <button
+          class="btn-nav px-4 py-3 bg-gradient-to-tr from-[#F7E93f] via-[#FB09B4] to-[#9100F8] rounded-3xl m-2.5 font-semibold text-base hover:cursor-pointer transition-transform duration-300 hover:translate-x-1.5 -translate-y-1 shadow-blue-50"
+        >
+          Subscribe<i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </nav>
+      <hr class="w-full text-[#412567]" />
+    </section>
+
+    <!-- Hero Section -->
+    <section>
+      <div
+        class="hero-container bg-[#190a2e] w-full h-screen bg-[url('./assets/hero-bg.png')] bg-cover bg-center bg-no-repeat flex justify-center items-center"
+      >
+        <div class="box flex-col items-center justify-center gap-10">
+          <div class="image-container relative m-auto">
+            <button
+              class="absolute z-15 bg-[#00FF88] text-black px-8 py-2 m-auto rounded-3xl right-2 font-bold shadow-md shadow-[rgba(0,255,136,0.5)]"
+            >
+              New
+            </button>
+            <img
+              src="./assets/microphone.png"
+              alt=""
+              class="mic absolute m-auto inset-0 z-10"
+            />
+            <img
+              src="./assets/hero-circle.png"
+              alt=""
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="box-texts mt-9 space-y-3 w-full max-w-md">
+            <h1 class="font-bold text-white text-3xl text-center">TECHWAVE</h1>
+
+            <p class=" para text-center font-light text-[rgba(255,255,255,1)]">
+              Your daily dose of tech insights, productivity hacks, and personal
+              growth
+            </p>
+
+            <div class="hero-btn flex justify-center">
+              <button
+                class="px-6 py-3 bg-gradient-to-tr from-[#F7E93f] via-[#FB09B4] to-[#9100F8] rounded-3xl m-2.5 -translate-y-1 font-semibold text-base hover:cursor-pointer transition-transform duration-300 hover:translate-1.5 shadow-blue-50 text-[#FFFFFF]"
+              >
+                <i class="fa-brands fa-spotify"></i>Listen On Spotify
+              </button>
+              <button
+                class="px-4 py-3 bg-transparent rounded-3xl m-2.5 font-medium text-base hover:cursor-pointer -translate-y-1 transition-transform duration-300 hover:translate-1.5 text-[#FFFFFF] border-1 border-green-500"
+              >
+                <i class="fa-regular fa-envelope" style="color: #00ff88"></i
+                >Subscribe
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
